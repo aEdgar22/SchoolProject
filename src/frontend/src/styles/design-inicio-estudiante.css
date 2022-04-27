@@ -54,3 +54,27 @@ body {
   justify-content: center;
   color: var(--alternative-text-color);
 }
+
+.submenu-container{
+  display: flex;
+  justify-content: space-around;
+  width: 28rem;
+}
+
+.submenu{
+  font-size: .875rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media (min-width:720px) {
+  .btn-menu{
+    display: none;
+  }
+}
+
+@media (max-width:719px) {
+  .submenu, .submenu-container{
+    display: none;
+  }
+}
