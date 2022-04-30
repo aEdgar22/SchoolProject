@@ -1,11 +1,11 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../database/database.js';
 
-export const User = sequelize.define('users', {
+ const User = sequelize.define('users', {
   dni: {
     type: DataTypes.INTEGER,
     primaryKey: true,
-    autoIncrement: true,
+    autoIncrement: false,
     allowNull: false,
   },
   nombre: {
@@ -29,8 +29,8 @@ export const User = sequelize.define('users', {
     unique: true,
     allowNull: false,
   },
-  constraseña: {
-    type: DataTypes.INTEGER,
+  contraseña: {
+    type: DataTypes.STRING,
     allowNull: false,
   },
   fecha_nacimiento: {
@@ -45,4 +45,9 @@ export const User = sequelize.define('users', {
     type: DataTypes.STRING,
     allowNull: true,
   },
+},
+{
+  timestamps: false
 });
+
+export default User;
