@@ -1,4 +1,6 @@
+/* Importacion de propiedades personalizadas */
 @import url(root.css);
+/* Importacion de encabezado y navegacion por defecto */
 @import url(design-inicio-estudiante.css);
 
 #container {
@@ -35,6 +37,7 @@
   color: var(--text-color);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
   background-color: var(--primary-color);
   transition: 150ms;
 }
