@@ -3,7 +3,7 @@ const router = Router();
 import userController from '../controllers/user.controller.js';
 import auth from '../controllers/auth.controller.js';
 import passport from 'passport';
-
+import checkAdminRole from '../middlewares/auth.handler.js'
 // http://localhost:3000/api/v1/user/
 router.get('/', userController.inicio);
 
@@ -11,6 +11,7 @@ router.get('/', userController.inicio);
 router.post(
   '/singUp',
   passport.authenticate('jwt', { session: false }),
+  checkAdminRole,
   auth.singUp
 );
 

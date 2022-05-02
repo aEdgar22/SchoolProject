@@ -21,7 +21,7 @@ const singUp = async (req, res) => {
     if (newUser) {
       //devolviendo data en json
       delete newUser.dataValues.contraseña;
-      res.status(200).json({
+      res.status(201).json({
         newUser,
       });
    

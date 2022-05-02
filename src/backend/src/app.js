@@ -15,6 +15,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.urlencoded({extended: false}));
 
+import './utils/auth/index.js';
+
 routerApi(app);
 
 export default app;
