@@ -1,4 +1,6 @@
+/* Importacion de propiedades personalizadas */
 @import url(root.css);
+/* Importacion de encabezado y navegacion por defecto */
 @import url(design-inicio-estudiante.css);
 
 .dropbox-container{

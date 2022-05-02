@@ -22,3 +22,7 @@ html {
   font-family: var(--font);
   font-size: 16px;
 }
+
+/* Propiedades personalizadas
+reseto de box-sizing
+tipografia y tamaño de fuente establecidos por defecto */

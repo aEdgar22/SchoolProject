@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- importacion de tipografias, hojas de estilo y favicon -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,7 @@
     <title>Resultado de notas</title>
   </head>
   <body>
+    <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
     <header class="header">
       <nav class="nav">
         <p class="logo">Gestión Académica</p>
@@ -29,38 +31,37 @@
       </nav>
     </header>
 
+    <!-- Filtros para consulta de notas -->
     <form class="dropbox-container">
       <select class="filter" name="select-año" id="filter-año">
-        <option value="" disabled>Seleccionar año</option>
-        <option value="">Año</option>
+        <option selected disabled>Año</option>
         <option value="">2018</option>
         <option value="">2019</option>
         <option value="">2020</option>
       </select>
       <select class="filter" name="select-periodo" id="filter-periodo">
-        <option value="" disabled>Seleccionar periodo</option>
-        <option value="">Periodo</option>
+        <option selected disabled>Periodo</option>
         <option value="">Primero</option>
         <option value="">Segundo</option>
         <option value="">Tercero</option>
       </select>
       <select class="filter" name="select-grado" id="filter-grado">
-        <option value="" disabled>Seleccionar grado</option>
-        <option value="">Grado</option>
+        <option selected disabled>Grado</option>
         <option value="">Sexto</option>
         <option value="">Septimo</option>
         <option value="">Octavo</option>
       </select>
       <select class="filter" name="select-asignatura" id="filter-asignatura">
-        <option value="" disabled>Seleccionar asignatura</option>
-        <option value="">Asignatura</option>
+        <option selected disabled>Asignatura</option>
         <option value="">Literatura</option>
         <option value="">Matemáticas</option>
         <option value="">Física</option>
       </select>
     </form>
     <div class="target">
-      <span id="text">No hay registros, verifique los filtros de la consultas.</span>
+      <span id="text"
+        >No hay registros, verifique los filtros de la consultas.</span
+      >
     </div>
   </body>
 </html>
