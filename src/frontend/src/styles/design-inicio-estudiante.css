@@ -69,6 +69,34 @@ body {
   cursor: pointer;
 }
 
+#drop-content{
+  display: none;
+  position: absolute;
+  width: auto;
+  background-color: var(--primary-color);
+  z-index: 999;
+  border-radius: 4px;
+  padding-top: 1rem;
+  margin-right: .5rem;
+}
+
+#drop-content a{
+  font-size: 14px;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: .875rem;
+}
+
+#drop-content a:hover{
+  background-color: var(--hover-color);
+  border-radius: 4px;
+}
+
+.drop-btn:hover #drop-content{
+  display: block;
+}
+
 @media (min-width:720px) {
   .btn-menu{
     display: none;
