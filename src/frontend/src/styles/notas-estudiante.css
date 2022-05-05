@@ -1,7 +1,12 @@
 /* Importacion de propiedades personalizadas */
 @import url(root.css);
 /* Importacion de encabezado y navegacion por defecto */
-@import url(design-inicio-estudiante.css);
+@import url(navegacion-default.css);
+
+body {
+  margin: 0;
+  height: 100vh;
+}
 
 .dropbox-container{
   margin: 1.5rem auto auto auto;
