@@ -1,5 +1,12 @@
+/* Importacion de propiedades personalizadas */
 @import url(root.css);
-@import url(design-inicio-estudiante.css);
+/* Importacion de encabezado y navegacion por defecto */
+@import url(navegacion-default.css);
+
+body {
+  margin: 0;
+  height: 100vh;
+}
 
 #container {
   margin: 1.5rem auto auto;
@@ -35,6 +42,7 @@
   color: var(--text-color);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
   background-color: var(--primary-color);
   transition: 150ms;
 }
