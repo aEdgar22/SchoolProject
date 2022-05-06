@@ -40,6 +40,7 @@ const singIn = async (req, res) => {
         email,
       },
     });
+    
     if (!user) {
       res.status(404).json({ message: 'Usuario con este email no encontrado' });
     } else {
@@ -57,6 +58,7 @@ const singIn = async (req, res) => {
           delete user.dataValues.contraseña;
           delete user.dataValues.genero;
           delete user.dataValues.telefono;
+
           res.status(200).json({
               user,
               token
@@ -67,6 +69,7 @@ const singIn = async (req, res) => {
       }
     }
   } catch (error) {
+   
     res.status(500).json(`ha habído un error ${error}`);
   }
 };
