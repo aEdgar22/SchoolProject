@@ -1,0 +1,65 @@
+/* Importacion de propiedades personalizadas */
+@import url(../styles/root.css);
+/* Importacion de encabezado y navegacion por defecto */
+@import url(../styles/navegacion-default.css);
+/* Importacion de estilos de formulario para registro y actualizacion de datos*/
+@import url(../styles/formularios.css);
+
+body {
+  height: auto;
+  margin: 0;
+}
+
+#submit {
+  height: 2.125rem;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition-duration: 100ms;
+}
+
+#submit:active {
+  background-color: var(--hover-color);
+}
+
+#table {
+  margin: auto;
+  border: 2px solid var(--block-color);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: var(--text-color-table);
+  font-size: 14px;
+}
+
+.column {
+  padding: 0.875rem 1rem;
+  background-color: var(--color-table);
+  text-transform: uppercase;
+}
+
+.row {
+  text-align: center;
+  padding: 0.875rem 1rem;
+}
+
+#color {
+  background-color: var(--color-table);
+}
+
+#img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 800px) {
+  #table {
+    width: 38rem;
+  }
+}
