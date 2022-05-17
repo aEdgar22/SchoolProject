@@ -8,6 +8,6 @@
 @import url(../styles/tablas.css);
 
 body {
-  height: auto;
   margin: 0;
+  height: 100vh;
 }

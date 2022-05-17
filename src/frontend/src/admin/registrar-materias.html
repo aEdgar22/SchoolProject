@@ -12,12 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
     />
     <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../admin styles/registrar-curso.css" />
+    <link rel="stylesheet" href="../admin styles/registrar-materias.css" />
     <script
       src="https://kit.fontawesome.com/2db2d1eed0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Registrar curso</title>
+    <title>Registrar materias</title>
   </head>
   <body>
     <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
@@ -58,18 +58,10 @@
 
     <!-- Contenedor y entrada de datos para registrar estudiantes, inputs y dropbox -->
     <form id="inputs-container">
-      <span id="label-title">Registrar curso</span>
+      <span id="label-title">Registrar asignatura</span>
       <div class="inputs-childs">
-        <label for="">Nombre del curso</label>
-        <input type="text" name="curso" />
-      </div>
-      <div class="inputs-childs">
-        <label for="">Jornada</label>
-        <select name="tipo_doc_id">
-          <option disabled selected>Seleccione</option>
-          <option value="1">Mañana</option>
-          <option value="2">Tarde</option>
-        </select>
+        <label for="">Nombre de la asignatura</label>
+        <input type="text" name="nombre_materia" />
       </div>
       <div class="inputs-childs">
         <label for="">Profesor</label>
@@ -84,13 +76,13 @@
     </form>
     <table id="table">
       <tr>
-        <th class="column">Curso</th>
-        <th class="column">Jornada</th>
+        <th class="column">Asignatura</th>
+        <th class="column">Profesor</th>
         <th class="column">Acciones</th>
       </tr>
       <tr>
-        <td id="color" class="row">Septimo</td>
-        <td id="color" class="row">Tarde</td>
+        <td id="color" class="row">Literatura</td>
+        <td id="color" class="row">Ernesto Sabato</td>
         <td id="color" class="row">
           <i class="fa-solid fa-pen"></i>
           <i class="fa-solid fa-trash"></i>
